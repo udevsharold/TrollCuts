@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		023D835B2B5BB41800653FAC /* SetRingerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023D835A2B5BB41800653FAC /* SetRingerState.swift */; };
+		023D835D2B5BC02F00653FAC /* GetRingerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023D835C2B5BC02F00653FAC /* GetRingerState.swift */; };
 		0241D58A2B56C1E00035DDE7 /* ManagedConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029EB2F22B555E14004DA9F0 /* ManagedConfiguration.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		025B5DA82B54E60F003DBD4D /* TrollCutsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B5DA72B54E60F003DBD4D /* TrollCutsApp.swift */; };
 		025B5DAA2B54E60F003DBD4D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B5DA92B54E60F003DBD4D /* ContentView.swift */; };
@@ -36,9 +38,17 @@
 		029EB32B2B565B58004DA9F0 /* SetAutoBrightness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029EB32A2B565B58004DA9F0 /* SetAutoBrightness.swift */; };
 		029EB32D2B565B69004DA9F0 /* SetAutoLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029EB32C2B565B69004DA9F0 /* SetAutoLock.swift */; };
 		029EB32F2B566871004DA9F0 /* GraphicsServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029EB32E2B566870004DA9F0 /* GraphicsServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		02AA45462B5B689100DE656C /* SetLocationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AA45452B5B689100DE656C /* SetLocationServices.swift */; };
+		02AA45482B5B69BB00DE656C /* StartLocationSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AA45472B5B69BB00DE656C /* StartLocationSimulation.swift */; };
+		02AA454A2B5B69D500DE656C /* StopLocationSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AA45492B5B69D500DE656C /* StopLocationSimulation.swift */; };
+		02AA454C2B5B77CC00DE656C /* locsim.m in Sources */ = {isa = PBXBuildFile; fileRef = 02AA454B2B5B77CC00DE656C /* locsim.m */; };
+		02AA45542B5B81F400DE656C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02AA454E2B5B7EB500DE656C /* CoreLocation.framework */; };
+		02AA45572B5B8A3A00DE656C /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AA45562B5B8A3A00DE656C /* Enum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		023D835A2B5BB41800653FAC /* SetRingerState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetRingerState.swift; sourceTree = "<group>"; };
+		023D835C2B5BC02F00653FAC /* GetRingerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRingerState.swift; sourceTree = "<group>"; };
 		025B5DA42B54E60F003DBD4D /* TrollCuts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrollCuts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		025B5DA72B54E60F003DBD4D /* TrollCutsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrollCutsApp.swift; sourceTree = "<group>"; };
 		025B5DA92B54E60F003DBD4D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +85,14 @@
 		029EB32A2B565B58004DA9F0 /* SetAutoBrightness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetAutoBrightness.swift; sourceTree = "<group>"; };
 		029EB32C2B565B69004DA9F0 /* SetAutoLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetAutoLock.swift; sourceTree = "<group>"; };
 		029EB32E2B566870004DA9F0 /* GraphicsServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GraphicsServices.framework; path = PrivateFrameworks/GraphicsServices.framework; sourceTree = "<group>"; };
+		02AA45452B5B689100DE656C /* SetLocationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetLocationServices.swift; sourceTree = "<group>"; };
+		02AA45472B5B69BB00DE656C /* StartLocationSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartLocationSimulation.swift; sourceTree = "<group>"; };
+		02AA45492B5B69D500DE656C /* StopLocationSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopLocationSimulation.swift; sourceTree = "<group>"; };
+		02AA454B2B5B77CC00DE656C /* locsim.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = locsim.m; sourceTree = "<group>"; };
+		02AA454D2B5B77DD00DE656C /* locsim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = locsim.h; sourceTree = "<group>"; };
+		02AA454E2B5B7EB500DE656C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		02AA45502B5B81A400DE656C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = PrivateFrameworks/CoreLocation.framework; sourceTree = "<group>"; };
+		02AA45562B5B8A3A00DE656C /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +101,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				029EB2DE2B5522E5004DA9F0 /* MobileContainerManager.framework in Frameworks */,
+				02AA45542B5B81F400DE656C /* CoreLocation.framework in Frameworks */,
 				029EB2C92B550E07004DA9F0 /* MobileBackup.framework in Frameworks */,
 				029EB30F2B557527004DA9F0 /* BaseBoard.framework in Frameworks */,
 				029EB3032B5570D2004DA9F0 /* CoreFoundation.framework in Frameworks */,
@@ -141,6 +160,7 @@
 		025B5DB62B54E6C7003DBD4D /* Intents */ = {
 			isa = PBXGroup;
 			children = (
+				023D835A2B5BB41800653FAC /* SetRingerState.swift */,
 				029EB30B2B5574A7004DA9F0 /* SwitchAppsRegistration.swift */,
 				025B5DB82B54E71D003DBD4D /* StartBackup.swift */,
 				029EB2E12B552E4F004DA9F0 /* Respring.swift */,
@@ -152,6 +172,10 @@
 				029EB3182B558055004DA9F0 /* GetBackupState.swift */,
 				029EB32A2B565B58004DA9F0 /* SetAutoBrightness.swift */,
 				029EB32C2B565B69004DA9F0 /* SetAutoLock.swift */,
+				02AA45452B5B689100DE656C /* SetLocationServices.swift */,
+				02AA45472B5B69BB00DE656C /* StartLocationSimulation.swift */,
+				02AA45492B5B69D500DE656C /* StopLocationSimulation.swift */,
+				023D835C2B5BC02F00653FAC /* GetRingerState.swift */,
 			);
 			path = Intents;
 			sourceTree = "<group>";
@@ -159,6 +183,8 @@
 		029EB2C62B550DE4004DA9F0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				02AA454E2B5B7EB500DE656C /* CoreLocation.framework */,
+				02AA45502B5B81A400DE656C /* CoreLocation.framework */,
 				029EB32E2B566870004DA9F0 /* GraphicsServices.framework */,
 				029EB3122B5575B2004DA9F0 /* BoardServices.framework */,
 				029EB30E2B557526004DA9F0 /* BaseBoard.framework */,
@@ -176,6 +202,7 @@
 		029EB2CA2B5513EC004DA9F0 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				02AA45552B5B8A1F00DE656C /* Intents */,
 				029EB2E52B553385004DA9F0 /* PrivateHeader.h */,
 				029EB2CB2B551406004DA9F0 /* TSUtil.h */,
 				029EB2CC2B55141B004DA9F0 /* TSUtil.m */,
@@ -184,8 +211,18 @@
 				029EB2DA2B551AD7004DA9F0 /* TCUtil.h */,
 				029EB2FF2B556FDF004DA9F0 /* userspaceReboot.h */,
 				029EB3002B556FDF004DA9F0 /* userspaceReboot.c */,
+				02AA454B2B5B77CC00DE656C /* locsim.m */,
+				02AA454D2B5B77DD00DE656C /* locsim.h */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		02AA45552B5B8A1F00DE656C /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				02AA45562B5B8A3A00DE656C /* Enum.swift */,
+			);
+			path = Intents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,22 +297,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02AA45462B5B689100DE656C /* SetLocationServices.swift in Sources */,
 				029EB3172B558045004DA9F0 /* GetBackupProgress.swift in Sources */,
+				02AA454C2B5B77CC00DE656C /* locsim.m in Sources */,
 				029EB3012B556FDF004DA9F0 /* userspaceReboot.c in Sources */,
 				029EB2D92B551AC1004DA9F0 /* TCUtil.m in Sources */,
 				029EB2CD2B55141B004DA9F0 /* TSUtil.m in Sources */,
 				025B5DAA2B54E60F003DBD4D /* ContentView.swift in Sources */,
 				029EB3192B558055004DA9F0 /* GetBackupState.swift in Sources */,
 				029EB32B2B565B58004DA9F0 /* SetAutoBrightness.swift in Sources */,
+				02AA45482B5B69BB00DE656C /* StartLocationSimulation.swift in Sources */,
 				025B5DA82B54E60F003DBD4D /* TrollCutsApp.swift in Sources */,
+				02AA45572B5B8A3A00DE656C /* Enum.swift in Sources */,
 				029EB2E42B552F38004DA9F0 /* CancelBackup.swift in Sources */,
 				029EB2FB2B5562E2004DA9F0 /* UserspaceReboot.swift in Sources */,
 				029EB32D2B565B69004DA9F0 /* SetAutoLock.swift in Sources */,
 				029EB2E82B553871004DA9F0 /* Lock.swift in Sources */,
+				02AA454A2B5B69D500DE656C /* StopLocationSimulation.swift in Sources */,
 				029EB3052B5571F7004DA9F0 /* Reboot.swift in Sources */,
 				029EB30D2B5574A7004DA9F0 /* SwitchAppsRegistration.swift in Sources */,
 				025B5DB92B54E71D003DBD4D /* StartBackup.swift in Sources */,
 				029EB2E22B552E4F004DA9F0 /* Respring.swift in Sources */,
+				023D835D2B5BC02F00653FAC /* GetRingerState.swift in Sources */,
+				023D835B2B5BB41800653FAC /* SetRingerState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +465,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.udevs.TrollCuts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -457,7 +501,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.udevs.TrollCuts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

@@ -25,6 +25,12 @@ struct SwitchAppsRegistrationAppIntent: AppIntent {
 	)
 	var ignoreSelf: Bool
 
+	static var parameterSummary: some ParameterSummary {
+		Summary("Set Apps State to \(\.$state)"){
+			\.$ignoreSelf
+		}
+	}
+
 	func perform() async throws -> some IntentResult {
 		if  trollStorePath() != nil {
             switchAllAppsRegistration(state.rawValue.capitalized, ignoreSelf ? ["TrollCuts.app"]: nil)

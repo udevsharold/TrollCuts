@@ -10,7 +10,7 @@ struct LockAppIntent: AppIntent {
 		categoryName: "Device"
 	)
 
-	func perform() async throws -> some IntentResult{
+	func perform() async throws -> some IntentResult {
 		let handle = dlopen(FW_ManagedConfiguration, RTLD_LAZY)
 		if handle != nil {
             MCProfileConnection.shared().lockDevice()

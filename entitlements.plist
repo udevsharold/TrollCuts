@@ -28,5 +28,9 @@
     <true/>
     <key>com.apple.managedconfiguration.profiled-access</key>
     <true/>
+    <key>com.apple.locationd.simulation</key>
+    <true/>
+    <key>com.apple.locationd.authorizeapplications</key>
+    <true/>
   </dict>
 </plist>

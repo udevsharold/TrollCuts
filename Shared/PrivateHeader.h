@@ -7,6 +7,7 @@
 #endif /* PrivateHeader_h */
 
 @import Foundation;
+@import CoreLocation;
 
 void GSSendAppPreferencesChanged(CFStringRef bundleID, CFStringRef key);
 
@@ -46,3 +47,26 @@ void GSSendAppPreferencesChanged(CFStringRef bundleID, CFStringRef key);
 +(id)maximumValueForSetting:(id)arg1 ;
 @end
 
+@interface CLLocationManager (Private)
++ (void)setLocationServicesEnabled:(bool)arg1;
+@end
+
+@interface CLSimulationManager : NSObject
+@property (assign,nonatomic) uint8_t locationDeliveryBehavior;
+@property (assign,nonatomic) double locationDistance;
+@property (assign,nonatomic) double locationInterval;
+@property (assign,nonatomic) double locationSpeed;
+@property (assign,nonatomic) uint8_t locationRepeatBehavior;
+-(void)clearSimulatedLocations;
+-(void)startLocationSimulation;
+-(void)stopLocationSimulation;
+-(void)appendSimulatedLocation:(id)arg1 ;
+-(void)flush;
+-(void)loadScenarioFromURL:(id)arg1 ;
+-(void)setSimulatedWifiPower:(BOOL)arg1 ;
+-(void)startWifiSimulation;
+-(void)stopWifiSimulation;
+-(void)setSimulatedCell:(id)arg1 ;
+-(void)startCellSimulation;
+-(void)stopCellSimulation;
+@end

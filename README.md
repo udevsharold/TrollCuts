@@ -13,5 +13,7 @@ iOS 16.0+ (AppIntent framework) and [TrollStore](https://github.com/opa334/Troll
 
  [@asdfugil](https://gist.github.com/asdfugil/e7b2fd92d8956716c46df54d4b1043e6), [PureKFD](https://github.com/PureKFD/PureKFD) - for the `userspacereboot.c`
 
+ [locsim](https://github.com/udevsharold/locsim)
+
 # License
 Pieces of code obtained from other repo are bound to their own license, everything else do as you please.

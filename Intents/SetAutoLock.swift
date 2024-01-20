@@ -10,14 +10,19 @@ struct SetAutoLockAppIntent: AppIntent {
 		categoryName: "Utility",
 		searchKeywords: [
 			"screen",
-            "display"
+            "display",
+            "autolock"
 		]
 	)
 
     @Parameter(title: "Duration", default: .halfsec)
 	var duration: AutoLockDurationAppEnum
 
-	func perform() async throws -> some IntentResult{
+	static var parameterSummary: some ParameterSummary {
+		Summary("Set Auto-Lock to \(\.$duration)")
+	}
+
+	func perform() async throws -> some IntentResult {
 		let handle = dlopen(FW_ManagedConfiguration, RTLD_LAZY)
         var value: Int32 = 0
         if handle != nil {

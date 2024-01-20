@@ -16,7 +16,7 @@ fi
 cd build
 
 if [ -e "$APPLICATION_NAME.tipa" ]; then
-rm $APPLICATION_NAME.tipa
+    rm $APPLICATION_NAME.tipa
 fi
 
 # Build .app

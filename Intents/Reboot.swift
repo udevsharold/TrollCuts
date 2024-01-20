@@ -10,7 +10,7 @@ struct RebootAppIntent: AppIntent {
 		categoryName: "Device"
 	)
 
-	func perform() async throws -> some IntentResult{
+	func perform() async throws -> some IntentResult {
 		let handle = dlopen(FW_FrontBoardServices, RTLD_LAZY)
 		if handle != nil {
 			FBSSystemService.shared().reboot()

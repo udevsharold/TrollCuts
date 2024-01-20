@@ -1,6 +1,5 @@
 // Created by udevs
 
-import Foundation
 import AppIntents
 
 struct UserspaceRebootAppIntent: AppIntent {
